@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gradient Maker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="content">
+    <div class="color-pickers">
+      <input type="color" id="color1" value="#008793"></input>
+      <input type="color" id="color2" value="#a8eb12"></input>
+    </div>
+
+
+    <div class="arrows">
+      <button onclick="setAngle(0)">↑</button>
+      <button onclick="setAngle(45)" class="diag">↗</button>
+      <button onclick="setAngle(90)">→</button>
+      <button onclick="setAngle(135)" class="diag">↘</button>
+      <button onclick="setAngle(180)">↓</button>
+      <button onclick="setAngle(225)" class="diag">↙</button>
+      <button onclick="setAngle(270)">←</button>
+      <button onclick="setAngle(315)" class="diag">↖</button>
+    </div>
+
+    <div class="code-description">CSS Code:</div>
+    <div id="code">linear-gradient(to right top, #008793, #a8eb12)</div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
